@@ -1,18 +1,111 @@
 <!DOCTYPE html>
-    <head></head>
-    <body>
-        <button onClick="openURL('https://www.youtube.com/watch?v=5kcI8k7K-X4')"><img src='./resources/bruh.png' width="200" height="200"><br>Bruh Mix</button>
-        <button onClick="openURL('https://www.youtube.com/watch?v=uKBLqfzJS8M')"><img src='./resources/bruh.png' width="200" height="200"><br>New Mix</button>
-        <button onClick="openURL('https://www.youtube.com/watch?v=OTTn2QXKhXE')"><img src='./resources/bruh.png' width="200" height="200"><br>Try Me</button>
-        <button onClick="openURL('https://www.youtube.com/watch?v=4E35wjFRrkU')"><img src='./resources/bruh.png' width="200" height="200"><br>6 Second Spam Track</button>
-        <button onClick="openURL('https://www.youtube.com/watch?v=N56cx8Sj9u8')"><img src='./resources/bruh.png' width="200" height="200"><br>Fries</button>
-        <button onClick="openURL('./resources/tranium.html')"><img src='./resources/tranium.png' width="200" height="200"><br>Tranium</button>
-        <button onClick="openURL('./resources/iivomc.html')"><img src='./resources/tranium.png' width="200" height="200"><br>IIVOMC</button>
-        <button onClick="openURL('https://www.youtube.com/@DJSpaceRetrotunes/videos')"><img src='./resources/djsp.jpg' width="200" height="200"><br>DJ SPACE MUSIC</button>
-        <script>
-            function openURL(url) {
-                open(url)
-            }
-        </script>
-    </body>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+/* Card */
+.card {
+    background: #151821;
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #3a4252;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Title */
+.card p {
+    margin: 10px 0 5px;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+    
+<div class="card" onclick="openURL('https://www.youtube.com/watch?v=2QyqwiNltDk')">
+<img src="./resources/bruh.png">
+<p>Dog Games</p>
+</div>
+    
+<div class="card" onclick="openURL('https://www.youtube.com/watch?v=5kcI8k7K-X4')">
+<img src="./resources/bruh.png">
+<p>Bruh Mix</p>
+</div>
+
+<div class="card" onclick="openURL('https://www.youtube.com/watch?v=uKBLqfzJS8M')">
+<img src="./resources/bruh.png">
+<p>New Mix</p>
+</div>
+
+<div class="card" onclick="openURL('https://www.youtube.com/watch?v=OTTn2QXKhXE')">
+<img src="./resources/bruh.png">
+<p>Try Me</p>
+</div>
+
+<div class="card" onclick="openURL('https://www.youtube.com/watch?v=4E35wjFRrkU')">
+<img src="./resources/bruh.png">
+<p>6 Second Spam Track</p>
+</div>
+
+<div class="card" onclick="openURL('https://www.youtube.com/watch?v=N56cx8Sj9u8')">
+<img src="./resources/bruh.png">
+<p>Fries</p>
+</div>
+
+<div class="card" onclick="openURL('./resources/tranium.html')">
+<img src="./resources/tranium.png">
+<p>Tranium</p>
+</div>
+
+<div class="card" onclick="openURL('./resources/iivomc.html')">
+<img src="./resources/tranium.png">
+<p>IIVOMC</p>
+</div>
+
+<div class="card" onclick="openURL('https://www.youtube.com/@DJSpaceRetrotunes/videos')">
+<img src="./resources/djsp.jpg">
+<p>DJ SPACE MUSIC</p>
+</div>
+
+</div>
+
+<script>
+function openURL(url) {
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
 </html>
